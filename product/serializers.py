@@ -4,7 +4,7 @@ from product.models import Product
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ("data", "del_flag")
+        fields = ("id", "data", "del_flag")
     
     def update(self, instance, validated_data):
         instance.data = validated_data.get("data", instance.data)
