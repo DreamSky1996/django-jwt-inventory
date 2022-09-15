@@ -19,7 +19,7 @@ python -m venv env
 env\Scripts\activate
 pip install -r requirements.txt
 
-python manage.py migate
+python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 ```
@@ -76,4 +76,9 @@ curl --location --request GET http://127.0.0.1:8000/api/v1/products-soft-del/{pr
 6. delete product (hard)
 ```
 curl --location --request DELETE http://127.0.0.1:8000/api/v1/products-hard-del/{product_id}/ --header "Authorization: Bearer {token}"
+```
+
+# UNIT TEST
+```
+python manage.py test
 ```
