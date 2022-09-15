@@ -82,3 +82,10 @@ curl --location --request DELETE http://127.0.0.1:8000/api/v1/products-hard-del/
 ```
 python manage.py test
 ```
+
+# DOCKER
+```
+docker-compose up
+```
+
+`You have to migrate and create superuser and user(for test).`
