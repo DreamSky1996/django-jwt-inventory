@@ -60,7 +60,7 @@ curl --location --request GET http://127.0.0.1:8000/api/v1/products/{product_id}
 ```
 3. Update product
 ```
-curl --request PUT "http://127.0.0.1:8000/api/v1/products-update/3/" --header "Authorization: Bearer {token}" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "data={updateData}"
+curl --request PUT "http://127.0.0.1:8000/api/v1/products-update/{product_id}/" --header "Authorization: Bearer {token}" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "data={updateData}"
 ```
 
 4. create product
